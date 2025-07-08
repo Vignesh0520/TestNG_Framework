@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Download link of testng-1.0.dtd -->
+<!-- https://testng.org/testng-1.0.dtd -->
+<!DOCTYPE suite SYSTEM "C:\Users\vigne\eclipse-workspace\TestNG_Framework\testng-1.0.dtd">
+<suite name="Suite">
+	<test thread-count="5" name="Test">
+		<classes>
+			<class name="org.samplePackage.SampleClass">
+				<methods>
+					<include name="testMethod1"></include>
+					<include name="testMethod2"></include>
+					<include name="testMethod4"></include>
+					<include name="testMethod3"></include>
+				</methods>
+			</class>
+		</classes>
+	</test> <!-- Test -->
+</suite> <!-- Suite -->

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="1" total="5" passed="4" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-07-05T22:47:00 IST" name="Suite" finished-at="2025-07-05T22:47:00 IST" duration-ms="60">
+    <groups>
+    </groups>
+    <test started-at="2025-07-05T22:47:00 IST" name="Test" finished-at="2025-07-05T22:47:00 IST" duration-ms="60">
+      <class name="org.samplePackage.SampleClass">
+        <test-method is-config="true" signature="beforeSuite()[pri:0, instance:org.samplePackage.SampleClass@59474f18]" started-at="2025-07-05T22:47:00 IST" name="beforeSuite" finished-at="2025-07-05T22:47:00 IST" duration-ms="11" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeSuite -->
+        <test-method is-config="true" signature="beforeTest()[pri:0, instance:org.samplePackage.SampleClass@59474f18]" started-at="2025-07-05T22:47:00 IST" name="beforeTest" finished-at="2025-07-05T22:47:00 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:org.samplePackage.SampleClass@59474f18]" started-at="2025-07-05T22:47:00 IST" name="beforeClass" finished-at="2025-07-05T22:47:00 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:org.samplePackage.SampleClass@59474f18]" started-at="2025-07-05T22:47:00 IST" name="beforeMethod" finished-at="2025-07-05T22:47:00 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="testMethod3()[pri:0, instance:org.samplePackage.SampleClass@59474f18]" started-at="2025-07-05T22:47:00 IST" name="testMethod3" finished-at="2025-07-05T22:47:00 IST" duration-ms="6" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testMethod3 -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:org.samplePackage.SampleClass@59474f18]" started-at="2025-07-05T22:47:00 IST" name="afterMethod" finished-at="2025-07-05T22:47:00 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:org.samplePackage.SampleClass@59474f18]" started-at="2025-07-05T22:47:00 IST" name="beforeMethod" finished-at="2025-07-05T22:47:00 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="testMethod4()[pri:0, instance:org.samplePackage.SampleClass@59474f18]" started-at="2025-07-05T22:47:00 IST" name="testMethod4" finished-at="2025-07-05T22:47:00 IST" duration-ms="3" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testMethod4 -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:org.samplePackage.SampleClass@59474f18]" started-at="2025-07-05T22:47:00 IST" name="afterMethod" finished-at="2025-07-05T22:47:00 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:org.samplePackage.SampleClass@59474f18]" started-at="2025-07-05T22:47:00 IST" name="beforeMethod" finished-at="2025-07-05T22:47:00 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="testMethod2()[pri:1, instance:org.samplePackage.SampleClass@59474f18]" started-at="2025-07-05T22:47:00 IST" name="testMethod2" finished-at="2025-07-05T22:47:00 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testMethod2 -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:org.samplePackage.SampleClass@59474f18]" started-at="2025-07-05T22:47:00 IST" name="afterMethod" finished-at="2025-07-05T22:47:00 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:org.samplePackage.SampleClass@59474f18]" started-at="2025-07-05T22:47:00 IST" name="beforeMethod" finished-at="2025-07-05T22:47:00 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="testMethod1()[pri:2, instance:org.samplePackage.SampleClass@59474f18]" started-at="2025-07-05T22:47:00 IST" name="testMethod1" finished-at="2025-07-05T22:47:00 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testMethod1 -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:org.samplePackage.SampleClass@59474f18]" started-at="2025-07-05T22:47:00 IST" name="afterMethod" finished-at="2025-07-05T22:47:00 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:org.samplePackage.SampleClass@59474f18]" started-at="2025-07-05T22:47:00 IST" name="afterClass" finished-at="2025-07-05T22:47:00 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+        <test-method is-config="true" signature="afterTest()[pri:0, instance:org.samplePackage.SampleClass@59474f18]" started-at="2025-07-05T22:47:00 IST" name="afterTest" finished-at="2025-07-05T22:47:00 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+        <test-method is-config="true" signature="afterSuite()[pri:0, instance:org.samplePackage.SampleClass@59474f18]" started-at="2025-07-05T22:47:01 IST" name="afterSuite" finished-at="2025-07-05T22:47:01 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterSuite -->
+      </class> <!-- org.samplePackage.SampleClass -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
