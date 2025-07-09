@@ -1,85 +1,131 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="1" total="5" passed="4" failed="0" skipped="0">
+<testng-results ignored="2" total="14" passed="10" failed="1" skipped="1">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-07-05T22:47:00 IST" name="Suite" finished-at="2025-07-05T22:47:00 IST" duration-ms="60">
+  <suite started-at="2025-07-10T00:09:16 IST" name="Default suite" finished-at="2025-07-10T00:09:16 IST" duration-ms="98">
     <groups>
     </groups>
-    <test started-at="2025-07-05T22:47:00 IST" name="Test" finished-at="2025-07-05T22:47:00 IST" duration-ms="60">
-      <class name="org.samplePackage.SampleClass">
-        <test-method is-config="true" signature="beforeSuite()[pri:0, instance:org.samplePackage.SampleClass@59474f18]" started-at="2025-07-05T22:47:00 IST" name="beforeSuite" finished-at="2025-07-05T22:47:00 IST" duration-ms="11" status="PASS">
+    <test started-at="2025-07-10T00:09:16 IST" name="Default test" finished-at="2025-07-10T00:09:16 IST" duration-ms="98">
+      <class name="org.samplePackage.TestNGHelperAttributes">
+        <test-method signature="method1()[pri:-3, instance:org.samplePackage.TestNGHelperAttributes@1d2adfbe]" started-at="2025-07-10T00:09:16 IST" name="method1" finished-at="2025-07-10T00:09:16 IST" duration-ms="7" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- beforeSuite -->
-        <test-method is-config="true" signature="beforeTest()[pri:0, instance:org.samplePackage.SampleClass@59474f18]" started-at="2025-07-05T22:47:00 IST" name="beforeTest" finished-at="2025-07-05T22:47:00 IST" duration-ms="0" status="PASS">
+        </test-method> <!-- method1 -->
+        <test-method signature="method11()[pri:0, instance:org.samplePackage.TestNGHelperAttributes@1d2adfbe]" started-at="2025-07-10T00:09:16 IST" name="method11" finished-at="2025-07-10T00:09:16 IST" depends-on-methods="org.samplePackage.TestNGHelperAttributes.method6" duration-ms="2" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- beforeTest -->
-        <test-method is-config="true" signature="beforeClass()[pri:0, instance:org.samplePackage.SampleClass@59474f18]" started-at="2025-07-05T22:47:00 IST" name="beforeClass" finished-at="2025-07-05T22:47:00 IST" duration-ms="1" status="PASS">
+        </test-method> <!-- method11 -->
+        <test-method signature="method4()[pri:0, instance:org.samplePackage.TestNGHelperAttributes@1d2adfbe]" started-at="2025-07-10T00:09:16 IST" name="method4" finished-at="2025-07-10T00:09:16 IST" duration-ms="2" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- beforeClass -->
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:org.samplePackage.SampleClass@59474f18]" started-at="2025-07-05T22:47:00 IST" name="beforeMethod" finished-at="2025-07-05T22:47:00 IST" duration-ms="1" status="PASS">
+        </test-method> <!-- method4 -->
+        <test-method signature="method7()[pri:0, instance:org.samplePackage.TestNGHelperAttributes@1d2adfbe]" started-at="2025-07-10T00:09:16 IST" name="method7" finished-at="2025-07-10T00:09:16 IST" duration-ms="3" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method signature="testMethod3()[pri:0, instance:org.samplePackage.SampleClass@59474f18]" started-at="2025-07-05T22:47:00 IST" name="testMethod3" finished-at="2025-07-05T22:47:00 IST" duration-ms="6" status="PASS">
+        </test-method> <!-- method7 -->
+        <test-method signature="method7()[pri:0, instance:org.samplePackage.TestNGHelperAttributes@1d2adfbe]" started-at="2025-07-10T00:09:16 IST" name="method7" finished-at="2025-07-10T00:09:16 IST" duration-ms="4" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testMethod3 -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:org.samplePackage.SampleClass@59474f18]" started-at="2025-07-05T22:47:00 IST" name="afterMethod" finished-at="2025-07-05T22:47:00 IST" duration-ms="0" status="PASS">
+        </test-method> <!-- method7 -->
+        <test-method signature="method7()[pri:0, instance:org.samplePackage.TestNGHelperAttributes@1d2adfbe]" started-at="2025-07-10T00:09:16 IST" name="method7" finished-at="2025-07-10T00:09:16 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:org.samplePackage.SampleClass@59474f18]" started-at="2025-07-05T22:47:00 IST" name="beforeMethod" finished-at="2025-07-05T22:47:00 IST" duration-ms="1" status="PASS">
+        </test-method> <!-- method7 -->
+        <test-method signature="method7()[pri:0, instance:org.samplePackage.TestNGHelperAttributes@1d2adfbe]" started-at="2025-07-10T00:09:16 IST" name="method7" finished-at="2025-07-10T00:09:16 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method signature="testMethod4()[pri:0, instance:org.samplePackage.SampleClass@59474f18]" started-at="2025-07-05T22:47:00 IST" name="testMethod4" finished-at="2025-07-05T22:47:00 IST" duration-ms="3" status="PASS">
+        </test-method> <!-- method7 -->
+        <test-method signature="method8()[pri:0, instance:org.samplePackage.TestNGHelperAttributes@1d2adfbe]" started-at="2025-07-10T00:09:16 IST" name="method8" finished-at="2025-07-10T00:09:16 IST" duration-ms="9" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1590)
+at org.testng.Assert.assertTrue(Assert.java:57)
+at org.testng.Assert.assertTrue(Assert.java:67)
+at org.samplePackage.TestNGHelperAttributes.method8(TestNGHelperAttributes.java:47)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testMethod4 -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:org.samplePackage.SampleClass@59474f18]" started-at="2025-07-05T22:47:00 IST" name="afterMethod" finished-at="2025-07-05T22:47:00 IST" duration-ms="0" status="PASS">
+        </test-method> <!-- method8 -->
+        <test-method signature="method10()[pri:0, instance:org.samplePackage.TestNGHelperAttributes@1d2adfbe]" started-at="2025-07-10T00:09:16 IST" name="method10" finished-at="2025-07-10T00:09:16 IST" depends-on-methods="org.samplePackage.TestNGHelperAttributes.method8" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:org.samplePackage.SampleClass@59474f18]" started-at="2025-07-05T22:47:00 IST" name="beforeMethod" finished-at="2025-07-05T22:47:00 IST" duration-ms="1" status="PASS">
+        </test-method> <!-- method10 -->
+        <test-method signature="method9()[pri:0, instance:org.samplePackage.TestNGHelperAttributes@1d2adfbe]" started-at="2025-07-10T00:09:16 IST" name="method9" finished-at="2025-07-10T00:09:16 IST" depends-on-methods="org.samplePackage.TestNGHelperAttributes.method8" duration-ms="0" status="SKIP">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method org.samplePackage.TestNGHelperAttributes.method9() on instance org.samplePackage.TestNGHelperAttributes@1d2adfbe depends on not successfully finished methods 
+[org.samplePackage.TestNGHelperAttributes.method8() on instance org.samplePackage.TestNGHelperAttributes@1d2adfbe]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method org.samplePackage.TestNGHelperAttributes.method9() on instance org.samplePackage.TestNGHelperAttributes@1d2adfbe depends on not successfully finished methods 
+[org.samplePackage.TestNGHelperAttributes.method8() on instance org.samplePackage.TestNGHelperAttributes@1d2adfbe]
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:159)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method signature="testMethod2()[pri:1, instance:org.samplePackage.SampleClass@59474f18]" started-at="2025-07-05T22:47:00 IST" name="testMethod2" finished-at="2025-07-05T22:47:00 IST" duration-ms="1" status="PASS">
+        </test-method> <!-- method9 -->
+        <test-method signature="method3()[pri:3, instance:org.samplePackage.TestNGHelperAttributes@1d2adfbe]" started-at="2025-07-10T00:09:16 IST" name="method3" finished-at="2025-07-10T00:09:16 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testMethod2 -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:org.samplePackage.SampleClass@59474f18]" started-at="2025-07-05T22:47:00 IST" name="afterMethod" finished-at="2025-07-05T22:47:00 IST" duration-ms="0" status="PASS">
+        </test-method> <!-- method3 -->
+        <test-method signature="method2()[pri:4, instance:org.samplePackage.TestNGHelperAttributes@1d2adfbe]" started-at="2025-07-10T00:09:16 IST" name="method2" finished-at="2025-07-10T00:09:16 IST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:org.samplePackage.SampleClass@59474f18]" started-at="2025-07-05T22:47:00 IST" name="beforeMethod" finished-at="2025-07-05T22:47:00 IST" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method signature="testMethod1()[pri:2, instance:org.samplePackage.SampleClass@59474f18]" started-at="2025-07-05T22:47:00 IST" name="testMethod1" finished-at="2025-07-05T22:47:00 IST" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testMethod1 -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:org.samplePackage.SampleClass@59474f18]" started-at="2025-07-05T22:47:00 IST" name="afterMethod" finished-at="2025-07-05T22:47:00 IST" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:org.samplePackage.SampleClass@59474f18]" started-at="2025-07-05T22:47:00 IST" name="afterClass" finished-at="2025-07-05T22:47:00 IST" duration-ms="2" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterClass -->
-        <test-method is-config="true" signature="afterTest()[pri:0, instance:org.samplePackage.SampleClass@59474f18]" started-at="2025-07-05T22:47:00 IST" name="afterTest" finished-at="2025-07-05T22:47:00 IST" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterTest -->
-        <test-method is-config="true" signature="afterSuite()[pri:0, instance:org.samplePackage.SampleClass@59474f18]" started-at="2025-07-05T22:47:01 IST" name="afterSuite" finished-at="2025-07-05T22:47:01 IST" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterSuite -->
-      </class> <!-- org.samplePackage.SampleClass -->
-    </test> <!-- Test -->
-  </suite> <!-- Suite -->
+        </test-method> <!-- method2 -->
+      </class> <!-- org.samplePackage.TestNGHelperAttributes -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>
