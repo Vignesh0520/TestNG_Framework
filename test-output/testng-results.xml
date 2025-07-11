@@ -2,7 +2,7 @@
 <testng-results ignored="0" total="4" passed="3" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-07-11T02:01:29 IST" name="SauceDemo_LoginPage_Validation_Suite" finished-at="2025-07-11T02:01:38 IST" duration-ms="8162">
+  <suite started-at="2025-07-11T10:52:46 IST" name="SauceDemo_LoginPage_Validation_Suite" finished-at="2025-07-11T10:52:54 IST" duration-ms="7414">
     <groups>
       <group name="HardAssert">
         <method signature="SauceDemo_LoginPage_Validation.testCase3()[pri:-1, instance:org.page.saucedemo.SauceDemo_LoginPage_Validation@776aec5c]" name="testCase3" class="org.page.saucedemo.SauceDemo_LoginPage_Validation"/>
@@ -13,21 +13,21 @@
         <method signature="SauceDemo_LoginPage_Validation.testCase4()[pri:5, instance:org.page.saucedemo.SauceDemo_LoginPage_Validation@776aec5c]" name="testCase4" class="org.page.saucedemo.SauceDemo_LoginPage_Validation"/>
       </group> <!-- SoftAssert -->
     </groups>
-    <test started-at="2025-07-11T02:01:29 IST" name="SauceDemo_LoginPage_Validation_Test" finished-at="2025-07-11T02:01:38 IST" duration-ms="8162">
+    <test started-at="2025-07-11T10:52:46 IST" name="SauceDemo_LoginPage_Validation_Test" finished-at="2025-07-11T10:52:54 IST" duration-ms="7414">
       <class name="org.page.saucedemo.SauceDemo_LoginPage_Validation">
-        <test-method signature="testCase3()[pri:-1, instance:org.page.saucedemo.SauceDemo_LoginPage_Validation@776aec5c]" started-at="2025-07-11T02:01:29 IST" name="testCase3" finished-at="2025-07-11T02:01:33 IST" duration-ms="3392" status="PASS">
+        <test-method signature="testCase3()[pri:-1, instance:org.page.saucedemo.SauceDemo_LoginPage_Validation@776aec5c]" started-at="2025-07-11T10:52:46 IST" name="testCase3" finished-at="2025-07-11T10:52:49 IST" duration-ms="2614" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testCase3 -->
-        <test-method signature="testCase2()[pri:0, instance:org.page.saucedemo.SauceDemo_LoginPage_Validation@776aec5c]" started-at="2025-07-11T02:01:33 IST" name="testCase2" finished-at="2025-07-11T02:01:34 IST" duration-ms="1448" status="PASS">
+        <test-method signature="testCase2()[pri:0, instance:org.page.saucedemo.SauceDemo_LoginPage_Validation@776aec5c]" started-at="2025-07-11T10:52:49 IST" name="testCase2" finished-at="2025-07-11T10:52:51 IST" duration-ms="1648" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testCase2 -->
-        <test-method signature="testCase1()[pri:1, instance:org.page.saucedemo.SauceDemo_LoginPage_Validation@776aec5c]" started-at="2025-07-11T02:01:34 IST" name="testCase1" finished-at="2025-07-11T02:01:36 IST" duration-ms="1914" status="PASS">
+        <test-method signature="testCase1()[pri:1, instance:org.page.saucedemo.SauceDemo_LoginPage_Validation@776aec5c]" started-at="2025-07-11T10:52:51 IST" name="testCase1" finished-at="2025-07-11T10:52:52 IST" duration-ms="1788" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testCase1 -->
-        <test-method signature="testCase4()[pri:5, instance:org.page.saucedemo.SauceDemo_LoginPage_Validation@776aec5c]" started-at="2025-07-11T02:01:36 IST" name="testCase4" finished-at="2025-07-11T02:01:38 IST" duration-ms="1368" status="FAIL">
+        <test-method signature="testCase4()[pri:5, instance:org.page.saucedemo.SauceDemo_LoginPage_Validation@776aec5c]" started-at="2025-07-11T10:52:52 IST" name="testCase4" finished-at="2025-07-11T10:52:54 IST" duration-ms="1317" status="FAIL">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[The following asserts failed:

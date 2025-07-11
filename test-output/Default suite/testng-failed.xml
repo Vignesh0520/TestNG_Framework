@@ -6,8 +6,6 @@
       <class name="org.page.saucedemo.SauceDemo_LoginPage_Validation">
         <methods>
           <include name="testCase4"/>
-          <include name="afterSuite"/>
-          <include name="beforeSuite"/>
         </methods>
       </class> <!-- org.page.saucedemo.SauceDemo_LoginPage_Validation -->
     </classes>
