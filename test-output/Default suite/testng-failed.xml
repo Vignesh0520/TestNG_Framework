@@ -5,7 +5,7 @@
     <classes>
       <class name="org.page.saucedemo.SauceDemo_LoginPage_Validation">
         <methods>
-          <include name="testCase4"/>
+          <include name="testCase4" invocation-numbers="0"/>
         </methods>
       </class> <!-- org.page.saucedemo.SauceDemo_LoginPage_Validation -->
     </classes>
