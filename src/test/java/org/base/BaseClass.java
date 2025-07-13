@@ -19,160 +19,119 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-// BaseClass provides a set of common utility methods for Selenium WebDriver-based automation.
-
 public class BaseClass {
 
-	public static WebDriver driver;
-	
-	public static Actions action;
-	
-	public static Select select;
-	
-	public static JavascriptExecutor jsExecutor;
+	private static final ThreadLocal<WebDriver> threadDriver = new ThreadLocal<>();
+	private static final ThreadLocal<Actions> threadActions = new ThreadLocal<>();
+	private static final ThreadLocal<Select> threadSelect = new ThreadLocal<>();
+	private static final ThreadLocal<JavascriptExecutor> threadJsExecutor = new ThreadLocal<>();
 
-	// Browser Launch
-	public static void browserLaunch(String BrowserName, String url) {
+	// Get driver for current thread
+	public WebDriver getDriver() {
+		return threadDriver.get();
+	}
 
-		if (BrowserName.equalsIgnoreCase("chrome")) {
+	public void browserLaunch(String browserName, String url) {
+		WebDriver driver;
+		if (browserName.equalsIgnoreCase("chrome")) {
 			driver = new ChromeDriver();
-		} else if (BrowserName.equalsIgnoreCase("edge")) {
+		} else if (browserName.equalsIgnoreCase("edge")) {
 			driver = new EdgeDriver();
-		} else if (BrowserName.equalsIgnoreCase("firefox")) {
+		} else if (browserName.equalsIgnoreCase("firefox")) {
 			driver = new FirefoxDriver();
+		} else {
+			throw new IllegalArgumentException("Unsupported browser: " + browserName);
 		}
-		driver.navigate().to(url);
+
+		threadDriver.set(driver);
 		driver.manage().window().maximize();
+		driver.get(url);
 	}
 
-	// Quit()
-	public static void closeAllBrowserWindow() {
-		driver.quit();
+	public void closeAllBrowserWindow() {
+		WebDriver driver = getDriver();
+		if (driver != null) {
+			driver.quit();
+			threadDriver.remove();
+		}
 	}
-	
-	// Static Wait - Thread.sleep()
-	public static void staticWait(int milliseconds) throws InterruptedException {
+
+	public void staticWait(int milliseconds) throws InterruptedException {
 		Thread.sleep(milliseconds);
 	}
 
-	// scrollIntoView(true)
-	public static void scrollIntoViewTrue(WebElement element) {
-
-		jsExecutor = (JavascriptExecutor) driver;
-		jsExecutor.executeScript("arguments[0].scrollIntoView(true);", element);
-
+	public void scrollIntoViewTrue(WebElement element) {
+		threadJsExecutor.set((JavascriptExecutor) getDriver());
+		threadJsExecutor.get().executeScript("arguments[0].scrollIntoView(true);", element);
 	}
 
-	// locate the element using xpath
-	public static WebElement findElementByXpath(String xpathExpression) {
-		WebElement element = driver.findElement(By.xpath(xpathExpression));
-		return element;
+	public WebElement findElementByXpath(String xpath) {
+		return getDriver().findElement(By.xpath(xpath));
 	}
 
-	// Close()
-	public static void closeCurrentBrowserWindow() {
-		driver.close();
+	public void closeCurrentBrowserWindow() {
+		getDriver().close();
 	}
 
-	// Implicitly Wait
-	public static void implicitlyWait(String unit, int quantity) {
-
+	public void implicitlyWait(String unit, int quantity) {
 		if (unit.equalsIgnoreCase("seconds")) {
-			driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(quantity));
+			getDriver().manage().timeouts().implicitlyWait(Duration.ofSeconds(quantity));
 		} else if (unit.equalsIgnoreCase("minutes")) {
-			driver.manage().timeouts().implicitlyWait(Duration.ofMinutes(quantity));
+			getDriver().manage().timeouts().implicitlyWait(Duration.ofMinutes(quantity));
 		}
-
 	}
 
-	// Refreshes the Browser
-	public static void refresh() {
-		driver.navigate().refresh();
+	public void refresh() {
+		getDriver().navigate().refresh();
 	}
 
-	// locate the element using cssSelector
-	public static WebElement findElementByCssSelector(String cssSelector) {
-
-		WebElement element = driver.findElement(By.cssSelector(cssSelector));
-		return element;
-
+	public WebElement findElementByCssSelector(String css) {
+		return getDriver().findElement(By.cssSelector(css));
 	}
 
-	// Mouse hover action
-	public static void moveMouseToElement(WebElement element) {
-		action = new Actions(driver);
-		action.moveToElement(element).perform();
+	public void moveMouseToElement(WebElement element) {
+		threadActions.set(new Actions(getDriver()));
+		threadActions.get().moveToElement(element).perform();
 	}
 
-	// sendKeys()
-	public static void textboxInput(WebElement element, String input) {
-
+	public void textboxInput(WebElement element, String input) {
 		element.sendKeys(input);
-
 	}
 
-	// Select by value
-	public static void selectOptionByValue(WebElement element, String value) {
-
-		select = new Select(element);
-		boolean multiple = select.isMultiple();
-		if (multiple == true) {
-			System.out.println("Given Select is Multiselect");
-		}
-		select.selectByValue(value);
-
+	public void selectOptionByValue(WebElement element, String value) {
+		threadSelect.set(new Select(element));
+		threadSelect.get().selectByValue(value);
 	}
 
-	// Select by Index
-	public static void selectOptionByIndex(WebElement element, int index) {
-
-		select = new Select(element);
-		boolean multiple = select.isMultiple();
-		if (multiple == true) {
-			System.out.println("Given Select is Multiselect");
-		}
-		select.selectByIndex(index);
-
+	public void selectOptionByIndex(WebElement element, int index) {
+		threadSelect.set(new Select(element));
+		threadSelect.get().selectByIndex(index);
 	}
 
-	// Screenshot
-	public static void screenshot(String fileName, String filePath) throws IOException {
-
-		TakesScreenshot takesScreenshot = (TakesScreenshot) driver;
-		File src = takesScreenshot.getScreenshotAs(OutputType.FILE);
+	public void screenshot(String fileName, String filePath) throws IOException {
+		TakesScreenshot ts = (TakesScreenshot) getDriver();
+		File src = ts.getScreenshotAs(OutputType.FILE);
 		File dest = new File(filePath + fileName + ".png");
 		FileUtils.copyFile(src, dest);
 	}
 
-	// Scrolls to Bottom of the page
-	public static void scrollToBottom() {
-
-		jsExecutor = (JavascriptExecutor) driver;
-		jsExecutor.executeScript("window.scrollTo(0, document.body.scrollHeight);");
-
+	public void scrollToBottom() {
+		threadJsExecutor.set((JavascriptExecutor) getDriver());
+		threadJsExecutor.get().executeScript("window.scrollTo(0, document.body.scrollHeight);");
 	}
 
-	// Scrolls to Top of the page
-	public static void scrollToTop() {
-
-		jsExecutor = (JavascriptExecutor) driver;
-		jsExecutor.executeScript("window.scrollTo(0, 0);");
-
+	public void scrollToTop() {
+		threadJsExecutor.set((JavascriptExecutor) getDriver());
+		threadJsExecutor.get().executeScript("window.scrollTo(0, 0);");
 	}
 
-	// scrollIntoView(false)
-	public static void scrollIntoViewFalse(WebElement element) {
-
-		jsExecutor = (JavascriptExecutor) driver;
-		jsExecutor.executeScript("arguments[0].scrollIntoView(false);", element);
-
+	public void scrollIntoViewFalse(WebElement element) {
+		threadJsExecutor.set((JavascriptExecutor) getDriver());
+		threadJsExecutor.get().executeScript("arguments[0].scrollIntoView(false);", element);
 	}
 
-	// WebDriverWait
-	public static void WaitForElementVisibility(WebElement element, int seconds) {
-
-		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(seconds));
+	public void WaitForElementVisibility(WebElement element, int seconds) {
+		WebDriverWait wait = new WebDriverWait(getDriver(), Duration.ofSeconds(seconds));
 		wait.until(ExpectedConditions.visibilityOf(element));
 	}
-
 }

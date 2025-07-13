@@ -1,15 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "C:\Users\vigne\eclipse-workspace\TestNG_Framework\testng-1.0.dtd">
-<suite name="SauceDemo_LoginPage_Validation_Suite">
-  <test thread-count="5" name="SauceDemo_LoginPage_Validation_Test">
-  	<groups>
-  		<run>
-  			<include name="HardAssert"></include>
-  			<include name="SoftAssert"></include>
-  		</run>
-  	</groups>
-    <classes>
-      <class name="org.page.saucedemo.SauceDemo_LoginPage_Validation"/>
-    </classes>
-  </test> <!-- SauceDemo_LoginPage_Validation_Test -->
+<suite parallel="methods"
+	name="SauceDemo_LoginPage_Validation_Suite">
+
+	<parameter name="username1" value="standard_user" />
+	<parameter name="username2" value="locked_out_user" />
+	<parameter name="browser_name" value="chrome" />
+	<parameter name="browser_name_2" value="edge" />
+	<parameter name="password" value="secret_sauce" />
+
+	<test thread-count="3" parallel="methods"
+		name="SauceDemo_LoginPage_Validation_Test">
+		<groups>
+			<run>
+				<include name="HardAssert"></include>
+				<!-- <include name="SoftAssert"></include> Temporarily disabled  -->
+			</run>
+		</groups>
+		<classes>
+			<class name="org.page.saucedemo.SauceDemo_LoginPage_Validation" />
+		</classes>
+	</test> <!-- SauceDemo_LoginPage_Validation_Test -->
 </suite> <!-- SauceDemo_LoginPage_Validation_Suite -->
