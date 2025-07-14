@@ -10,6 +10,8 @@ import org.testng.annotations.AfterMethod;
 import java.io.IOException;
 
 import org.base.BaseClass;
+import org.listeners.IRetryAnalyzerClass;
+import org.testng.Assert;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.AfterSuite;
@@ -36,10 +38,11 @@ public class SampleClass extends BaseClass {
 		System.out.println("Before Method");
 	}
 
-	@Test(priority = 2)
+	@Test(priority = 2, retryAnalyzer = IRetryAnalyzerClass.class)
 	public void testMethod1() {
 		System.out.println("TestCase1, Priority = 2");
 		System.out.println("Executing testMethod1");
+		Assert.assertTrue(false);
 	}
 
 	@Test(priority = 1)
@@ -52,7 +55,7 @@ public class SampleClass extends BaseClass {
 	public void testMethod3() throws IOException {
 		System.out.println("TestCase3, Priority = 0");
 		// find broken links from given webpage
-		findBrokenLinks("https://www.facebook.com/");
+		// findBrokenLinks("https://www.facebook.com/");
 		System.out.println("Executing testMethod3");
 	}
 
