@@ -6,11 +6,15 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 import org.testng.annotations.AfterMethod;
+
+import java.io.IOException;
+
+import org.base.BaseClass;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.AfterSuite;
 
-public class SampleClass {
+public class SampleClass extends BaseClass {
 
 	@BeforeSuite
 	public void beforeSuite() {
@@ -45,8 +49,10 @@ public class SampleClass {
 	}
 
 	@Test
-	public void testMethod3() {
+	public void testMethod3() throws IOException {
 		System.out.println("TestCase3, Priority = 0");
+		// find broken links from given webpage
+		findBrokenLinks("https://www.facebook.com/");
 		System.out.println("Executing testMethod3");
 	}
 
