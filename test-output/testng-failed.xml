@@ -3,11 +3,19 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="org.page.saucedemo.SauceDemo_LoginPage_Validation">
+      <class name="org.samplePackage.SampleClass">
         <methods>
-          <include name="testCase4" invocation-numbers="0"/>
+          <include name="testMethod1"/>
+          <include name="beforeClass"/>
+          <include name="beforeMethod"/>
+          <include name="beforeSuite"/>
+          <include name="afterClass"/>
+          <include name="afterTest"/>
+          <include name="afterSuite"/>
+          <include name="afterMethod"/>
+          <include name="beforeTest"/>
         </methods>
-      </class> <!-- org.page.saucedemo.SauceDemo_LoginPage_Validation -->
+      </class> <!-- org.samplePackage.SampleClass -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
