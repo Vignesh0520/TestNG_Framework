@@ -5,6 +5,13 @@ import org.openqa.selenium.WebElement;
 import org.page.saucedemo.pojo.SauceDemoLoginPage;
 import org.testng.annotations.Test;
 
+import io.qameta.allure.Description;
+import io.qameta.allure.Epic;
+import io.qameta.allure.Owner;
+import io.qameta.allure.Severity;
+import io.qameta.allure.SeverityLevel;
+import io.qameta.allure.Story;
+
 public class SampleTestClass_For_FactoryAnnotation extends BaseClass {
 
 	private String userName;
@@ -15,6 +22,11 @@ public class SampleTestClass_For_FactoryAnnotation extends BaseClass {
 		this.pass = password;
 	}
 
+	@Epic("Login Module")
+	@Story("Valid Login Test")
+	@Description("Verifies login with valid credentials")
+	@Severity(SeverityLevel.CRITICAL)
+	@Owner("Vignesh Raja")
 	@Test
 	public void sauceDemoLoginPageValidation() {
 		browserLaunch("chrome", "https://www.saucedemo.com/");
