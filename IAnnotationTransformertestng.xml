@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "C:\Users\vigne\eclipse-workspace\TestNG_Framework\testng-1.0.dtd">
+<suite name="RetrySuite">
+	<listeners>
+		<listener class-name="org.listeners.RetryListener" />
+	</listeners>
+	<test thread-count="5" name="RetryTests">
+		<classes>
+			<class name="org.listeners.ListenerSampleTest" />
+		</classes>
+	</test> <!-- RetryTests -->
+</suite> <!-- RetrySuite -->
