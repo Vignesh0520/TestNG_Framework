@@ -10,7 +10,7 @@ import org.testng.annotations.AfterMethod;
 import java.io.IOException;
 
 import org.base.BaseClass;
-import org.listeners.IRetryAnalyzerClass;
+import org.listeners.RetryAnalyzerClass;
 import org.testng.Assert;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterTest;
@@ -38,7 +38,7 @@ public class SampleClass extends BaseClass {
 		System.out.println("Before Method");
 	}
 
-	@Test(priority = 2, retryAnalyzer = IRetryAnalyzerClass.class)
+	@Test(priority = 2, retryAnalyzer = RetryAnalyzerClass.class)
 	public void testMethod1() {
 		System.out.println("TestCase1, Priority = 2");
 		System.out.println("Executing testMethod1");
