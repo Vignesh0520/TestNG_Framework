@@ -2,24 +2,24 @@
 <testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-07-15T22:25:05 IST" name="Default suite" finished-at="2025-07-15T22:25:17 IST" duration-ms="11717">
+  <suite started-at="2025-07-15T23:56:55 IST" name="Default suite" finished-at="2025-07-15T23:57:10 IST" duration-ms="15289">
     <groups>
     </groups>
-    <test started-at="2025-07-15T22:25:05 IST" name="Default test" finished-at="2025-07-15T22:25:17 IST" duration-ms="11717">
+    <test started-at="2025-07-15T23:56:55 IST" name="Default test" finished-at="2025-07-15T23:57:10 IST" duration-ms="15289">
       <class name="org.factory_annotation.SampleTestClass_For_FactoryAnnotation">
-        <test-method signature="sauceDemoLoginPageValidation()[pri:0, instance:org.factory_annotation.SampleTestClass_For_FactoryAnnotation@34e9fd99, instance params:[]]" started-at="2025-07-15T22:25:05 IST" name="sauceDemoLoginPageValidation" finished-at="2025-07-15T22:25:07 IST" duration-ms="1943" status="PASS">
+        <test-method signature="sauceDemoLoginPageValidation()[pri:0, instance:org.factory_annotation.SampleTestClass_For_FactoryAnnotation@2fb0623e, instance params:[]]" started-at="2025-07-15T23:56:55 IST" name="sauceDemoLoginPageValidation" finished-at="2025-07-15T23:56:59 IST" duration-ms="3542" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- sauceDemoLoginPageValidation -->
-        <test-method signature="sauceDemoLoginPageValidation()[pri:0, instance:org.factory_annotation.SampleTestClass_For_FactoryAnnotation@38425407, instance params:[]]" started-at="2025-07-15T22:25:07 IST" name="sauceDemoLoginPageValidation" finished-at="2025-07-15T22:25:14 IST" duration-ms="6605" status="PASS">
+        <test-method signature="sauceDemoLoginPageValidation()[pri:0, instance:org.factory_annotation.SampleTestClass_For_FactoryAnnotation@49b2a47d, instance params:[]]" started-at="2025-07-15T23:56:59 IST" name="sauceDemoLoginPageValidation" finished-at="2025-07-15T23:57:02 IST" duration-ms="3665" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- sauceDemoLoginPageValidation -->
-        <test-method signature="sauceDemoLoginPageValidation()[pri:0, instance:org.factory_annotation.SampleTestClass_For_FactoryAnnotation@3c41ed1d, instance params:[]]" started-at="2025-07-15T22:25:14 IST" name="sauceDemoLoginPageValidation" finished-at="2025-07-15T22:25:15 IST" duration-ms="1392" status="PASS">
+        <test-method signature="sauceDemoLoginPageValidation()[pri:0, instance:org.factory_annotation.SampleTestClass_For_FactoryAnnotation@5be1d0a4, instance params:[]]" started-at="2025-07-15T23:57:02 IST" name="sauceDemoLoginPageValidation" finished-at="2025-07-15T23:57:09 IST" duration-ms="6521" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- sauceDemoLoginPageValidation -->
-        <test-method signature="sauceDemoLoginPageValidation()[pri:0, instance:org.factory_annotation.SampleTestClass_For_FactoryAnnotation@54d9d12d, instance params:[]]" started-at="2025-07-15T22:25:15 IST" name="sauceDemoLoginPageValidation" finished-at="2025-07-15T22:25:17 IST" duration-ms="1741" status="PASS">
+        <test-method signature="sauceDemoLoginPageValidation()[pri:0, instance:org.factory_annotation.SampleTestClass_For_FactoryAnnotation@5e3f861, instance params:[]]" started-at="2025-07-15T23:57:09 IST" name="sauceDemoLoginPageValidation" finished-at="2025-07-15T23:57:10 IST" duration-ms="1460" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- sauceDemoLoginPageValidation -->
